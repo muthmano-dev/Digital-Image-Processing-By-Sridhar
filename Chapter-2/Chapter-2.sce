@@ -3,7 +3,8 @@
 
 //Example 2.1
 //About : Program to calculate the focal length of the lens required
-//Input : Object width , Imaging Sensor Size and distance of the Object
+//Input : None
+//Data Provided : Object width , Imaging Sensor Size and distance of the Object
 //Output : Focal length required in mm
 
 clc;
@@ -24,7 +25,8 @@ disp(F,'The required focal length lens in mm = ')
 
 //Example 2.1
 //About : Program to calculate the Physical size of an Image
-//Input :Image width and height in pixels and the resolution of the Image
+//Input : None
+//Data Provided :Image width and height in pixels and the resolution of the Image
 //Output : Physical size of the Image in square inches 
 
 Num_of_pixels_in_width = 2400;
@@ -40,7 +42,8 @@ disp(Size,'The Physical size is (in square inches) ',)
 
 //Example 2.5
 //About : Program to calculate the image matrix after applying threshold
-//Input :Image matrix and threshold value
+//Input : None
+//Data :Image matrix and threshold value
 //Output : Thresholded image after applying the threshold 
 
 //Given image matrix is F
@@ -66,7 +69,8 @@ disp(F,'The Image matrix after applying Threshold is ')
 
 //Example 2.6
 //About : Program to calculate the image matrix after applying threshold
-//Input :Image matrix and threshold matrix
+//Input : None
+//Data Provided:Image matrix and threshold matrix
 //Output : Thresholded image after applying the threshold 
 
 
@@ -91,7 +95,28 @@ disp(F,'The Image matrix after applying Threshold is ')
 
 //Example 2.7
 //About : Program to construct a higher order pattern array from Basic pattern              array using pattern generation mask
-//Input :Image matrix and ouput matrix size
+//Input : None
+//Data Provided:Image matrix and ouput matrix size
 //Output : Constructed higher order pattern matrix
+
+F = [1 2;3 4];
+
+M = F;
+
+[n,n] = size(M); // Since its a square matrix m and n are same
+
+//U matrix of the order n whose all elements are 1
+U = [];
+for i = 1:n
+    for j = 1:n
+        U(i,j) = 1;
+    end
+end
+
+F = [(4*M) ((4*M)+(2*U)) ; ((4*M)+(3*U)) ((4*M)+(U))];
+ 
+disp(F,'The constructed higher order(4x4) matrix from original F is ') 
+
+
 
 

@@ -3,7 +3,8 @@
 
 //Example 2.1
 //About : Program to calculate the focal length of the lens required
-//Input : Object width , Imaging Sensor Size and distance of the Object
+//Input : None
+//Data Provided : Object width , Imaging Sensor Size and distance of the Object
 //Output : Focal length required in mm
 
 clc;
@@ -69,7 +70,7 @@ disp(F,'The Image matrix after applying Threshold is ')
 //Example 2.6
 //About : Program to calculate the image matrix after applying threshold
 //Input : None
-//Data :Image matrix and threshold matrix
+//Data Provided:Image matrix and threshold matrix
 //Output : Thresholded image after applying the threshold 
 
 
@@ -95,8 +96,25 @@ disp(F,'The Image matrix after applying Threshold is ')
 //Example 2.7
 //About : Program to construct a higher order pattern array from Basic pattern              array using pattern generation mask
 //Input : None
-//Data :Image matrix and ouput matrix size
+//Data Provided:Image matrix and ouput matrix size
 //Output : Constructed higher order pattern matrix
+
+F = [1 2;3 4];
+
+M = F;
+
+[m,n] = size(M); // SInce its a square matrix m and n are same
+
+//Unit matrix of the order n
+U = [];
+for i = 1:n
+    U(i) = 1;
+end
+
+F = [M M;M M]
+//F = [(4*M) ((4*M)+(2*U)) ; ((4*M)+(3*U)) ((4*M)+(U))];
+ 
+disp(F) 
 
 
 
