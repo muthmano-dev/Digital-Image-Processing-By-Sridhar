@@ -1,4 +1,4 @@
-Data-Structures-by-Adam-Drozdek-in-Python
+Digital Image Processing by S. Sridhar
 =========================================
 
 About :
