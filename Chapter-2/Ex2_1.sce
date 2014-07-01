@@ -1,4 +1,3 @@
-
 //Chapter 2 : Digital Imaging System
 
 //Example 2.1
@@ -20,4 +19,4 @@ F = (700 * M)/(M + 1);
 
 disp(F,'The required focal length lens in mm = ')
 
-
+//Note : In the book the value is approximated and not exact.

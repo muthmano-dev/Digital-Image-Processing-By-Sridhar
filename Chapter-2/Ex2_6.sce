@@ -24,5 +24,5 @@ for i = 1:4
     end
 end
 
-disp(F,'The Image matrix after applying Threshold is ')
+disp(F,'F = ','The Output ')
 
