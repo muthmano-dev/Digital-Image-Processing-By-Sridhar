@@ -7,10 +7,10 @@ The solved examples from the book [Digital Image Processing](http://www.amazon.c
 
 Details about the book:
 -----------------------
-Name : Digital Image Processing
-Author : S.Sridhar
-ISBN-13: 978-0-19-807078-8
-ISBN-10: 0-19-807078-0
+Name : Digital Image Processing<br/>
+Author : S.Sridhar<br/>
+ISBN-13: 978-0-19-807078-8<br/>
+ISBN-10: 0-19-807078-0<br/>
 
 Getting Started :
 -----------------
