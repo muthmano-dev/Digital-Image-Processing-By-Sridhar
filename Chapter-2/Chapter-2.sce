@@ -23,11 +23,14 @@ disp(F,'The required focal length lens in mm = ')
 
 //--------------------------------------------------------------------------------//
 
-//Example 2.1
+//Example 2.3
 //About : Program to calculate the Physical size of an Image
 //Input : None
 //Data Provided :Image width and height in pixels and the resolution of the Image
 //Output : Physical size of the Image in square inches 
+
+clc;
+close;
 
 Num_of_pixels_in_width = 2400;
 Num_of_pixels_in_height = 2400;
@@ -45,6 +48,9 @@ disp(Size,'The Physical size is (in square inches) ',)
 //Input : None
 //Data :Image matrix and threshold value
 //Output : Thresholded image after applying the threshold 
+
+clc;
+close;
 
 //Given image matrix is F
 F = [1 2; 5 4]
@@ -73,6 +79,8 @@ disp(F,'The Image matrix after applying Threshold is ')
 //Data Provided:Image matrix and threshold matrix
 //Output : Thresholded image after applying the threshold 
 
+clc;
+close;
 
 //Given image matrix is F
 F = [1 2; 5 4]
@@ -98,6 +106,9 @@ disp(F,'The Image matrix after applying Threshold is ')
 //Input : None
 //Data Provided:Image matrix and ouput matrix size
 //Output : Constructed higher order pattern matrix
+
+clc;
+close;
 
 F = [1 2;3 4];
 
